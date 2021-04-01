@@ -1,5 +1,4 @@
 ---
-
 <!--
 Remove the fields that are not appropriate
 Please include:
@@ -12,7 +11,6 @@ Please include:
 **Screenshots?**
 
 **You have tested this PR on:**
-
-- [ ] Windows
-- [ ] Linux/Ubuntu
-- [ ] macOS
+  - [ ] Windows
+  - [ ] Linux/Ubuntu
+  - [ ] macOS
