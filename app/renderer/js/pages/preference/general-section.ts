@@ -12,7 +12,7 @@ import supportedLocales from "../../../../../public/translations/supported-local
 import * as ConfigUtil from "../../../../common/config-util.ts";
 import * as EnterpriseUtil from "../../../../common/enterprise-util.ts";
 import {html} from "../../../../common/html.ts";
-import * as t from "../../../../common/translation-util.ts";
+import {t} from "../../../../common/translation-util.ts";
 import {ipcRenderer} from "../../typed-ipc-renderer.ts";
 
 import {generateSelectHtml, generateSettingOption} from "./base-section.ts";

@@ -10,7 +10,7 @@ import {z} from "zod";
 import * as EnterpriseUtil from "../../../common/enterprise-util.ts";
 import Logger from "../../../common/logger-util.ts";
 import * as Messages from "../../../common/messages.ts";
-import * as t from "../../../common/translation-util.ts";
+import {t} from "../../../common/translation-util.ts";
 import type {ServerConfig} from "../../../common/types.ts";
 import defaultIcon from "../../img/icon.png";
 import {ipcRenderer} from "../typed-ipc-renderer.ts";

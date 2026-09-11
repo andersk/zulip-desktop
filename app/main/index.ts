@@ -19,7 +19,7 @@ import windowStateKeeper from "electron-window-state";
 
 import * as ConfigUtil from "../common/config-util.ts";
 import {bundlePath, bundleUrl, publicPath} from "../common/paths.ts";
-import * as t from "../common/translation-util.ts";
+import {t} from "../common/translation-util.ts";
 import type {RendererMessage} from "../common/typed-ipc.ts";
 import type {MenuProperties} from "../common/types.ts";
 

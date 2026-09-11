@@ -13,4 +13,4 @@ i18n.configure({
 /* Fetches the current appLocale from settings.json */
 i18n.setLocale(ConfigUtil.getConfigItem("appLanguage", "en") ?? "en");
 
-export {__, __mf} from "i18n";
+export {default as t} from "i18n";

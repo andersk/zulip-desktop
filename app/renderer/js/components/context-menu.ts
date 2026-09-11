@@ -8,7 +8,7 @@ import process from "node:process";
 
 import {BrowserWindow, Menu} from "@electron/remote";
 
-import * as t from "../../../common/translation-util.ts";
+import {t} from "../../../common/translation-util.ts";
 
 export const contextMenu = (
   webContents: WebContents,

@@ -20,7 +20,7 @@ import * as LinkUtil from "../../common/link-util.ts";
 import Logger from "../../common/logger-util.ts";
 import * as Messages from "../../common/messages.ts";
 import {bundlePath, bundleUrl} from "../../common/paths.ts";
-import * as t from "../../common/translation-util.ts";
+import {t} from "../../common/translation-util.ts";
 import type {
   NavigationItem,
   ServerConfig,
