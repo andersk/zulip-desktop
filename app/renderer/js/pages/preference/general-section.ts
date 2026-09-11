@@ -635,10 +635,11 @@ export function initGeneralSection({$root}: GeneralSectionProperties): void {
       ).availableSpellCheckerLanguages;
       let languagePairs = new Map<string, string>();
       for (const l of availableLanguages) {
-        const locale = new Intl.Locale(l.replaceAll("_", "-"));
+        const locale = new Intl.Locale(l);
         let displayName = new Intl.DisplayNames([locale], {
           type: "language",
-        }).of(locale.language);
+          languageDisplay: "standard",
+        }).of(l);
         if (displayName === undefined) {
           continue;
         }
@@ -646,13 +647,6 @@ export function initGeneralSection({$root}: GeneralSectionProperties): void {
         displayName = displayName.replace(/^./v, (firstChar) =>
           firstChar.toLocaleUpperCase(locale),
         );
-        if (locale.script !== undefined) {
-          displayName += ` (${new Intl.DisplayNames([locale], {type: "script"}).of(locale.script)})`;
-        }
-
-        if (locale.region !== undefined) {
-          displayName += ` (${new Intl.DisplayNames([locale], {type: "region"}).of(locale.region)})`;
-        }
 
         languagePairs.set(displayName, l);
       }
