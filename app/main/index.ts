@@ -205,6 +205,10 @@ function createMainWindow(): BrowserWindow {
   configureSpellChecker();
   ipcMain.on("configure-spell-checker", configureSpellChecker);
 
+  ipcMain.on("copy-text", (event, text: string) => {
+    clipboard.writeText(text);
+  });
+
   const clipboardSigKey = crypto.randomBytes(32);
 
   ipcMain.on("new-clipboard-key", (event) => {
